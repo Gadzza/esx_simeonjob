@@ -1,15 +1,10 @@
-
 -- made by Uwu Hentai | Uwu Hentai#4312
 -- converted by Gadzzaa | twitch.tv/gadzzaa#9949
 ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)	
-RegisterServerEvent("uwu:simeonda")
-AddEventHandler("uwu:simeonda", function()
-    local uwubulan = math.random(0, 2)
-    local banutiilanbajat = math.random(1, 3000)
+RegisterServerEvent("gadza:simeonda")
+AddEventHandler("gadza:simeonda", function()
+    local moneyrecieved = math.random(1, 3000)
     local xPlayer = ESX.GetPlayerFromId(source)
-
-    if uwubulan >= 0 and uwubulan <= 2 then
-		xPlayer.addMoney(banutiilanbajat)
-    end
+	xPlayer.addMoney(moneyrecieved)
 end)

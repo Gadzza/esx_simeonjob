@@ -1,49 +1,50 @@
-
 -- made by Uwu Hentai | Uwu Hentai#4312
 -- converted by Gadzzaa | twitch.tv/gadzzaa#9949
-local geamuri = {
+local windows = {
     "prop_bollard_02a"
 }
 
-local geamuri2 = {}
+local windows2 = {}
 
 Citizen.CreateThread(function()
     Wait(100)
     while true do
-        local timpdeasteptat = 1000
-        local jucator = PlayerPedId()
-        local jucatorCoord = GetEntityCoords(jucator)
+        local waittime = 1000
+        local player = PlayerPedId()
+        local playercoord = GetEntityCoords(player)
+        local drytime = 10000  -- In Miliseconds
         
-        for i = 1, #geamuri do
-            local x = GetClosestObjectOfType(jucatorCoord, 2.0, GetHashKey(geamuri[i]), false, false, false)
+        for i = 1, #windows do
+            local x = GetClosestObjectOfType(playercoord, 2.0, GetHashKey(windows[i]), false, false, false)
             local entity = nil
             if DoesEntityExist(x) then
                 entity = x
                 geam = GetEntityCoords(entity)
         if DoesEntityExist(entity) <= 1.5 then
-            timpdeasteptat = 5
-            DrawText3D(geam.x, geam.y, geam.z + 1.5, '~b~[SIMEON] ~w~Spala-mi si mie geamurile! Nu moka stai linistit!')  
+            waittime = 5
+            DrawText3D(geam.x, geam.y, geam.z + 1.5, '~b~[SIMEON] ~w~Wash this windows if you can! Do not worry! Not free!')  
+            DrawText3D(geam.x, geam.y, geam.z + 1.3, '~b~[SIMEON] ~w~To start press ~g~[E]')  
             if IsControlJustReleased(0, 38) then
-                if not geamuri2[entity] then
-                    geamuri2[entity] = true
+                if not windows2[entity] then
+                    windows2[entity] = true
                     OpenTrashCan()
-                    Wait(1000)
-                    geamuri2[entity] = false
+                    Wait(drytime)
+                    windows2[entity] = false
                 else
-                    notify("~b~[SIMEON] ~o~Acest geam a fost deja spalat!")
+                    notify("~b~[SIMEON] ~o~The windows were already washed!")
                         end
                     end
                 end
             end
         end
-        Citizen.Wait(timpdeasteptat)
+        Citizen.Wait(waittime)
     end
 end)
 
 function OpenTrashCan()
     TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_BUM_WASH", 0, true) -- SITE ANIMATII : https://gtaforums.com/topic/796181-list-of-scenarios-for-peds/
             Wait(10000)
-            TriggerServerEvent("uwu:simeonda")
+            TriggerServerEvent("gadza:simeonda")
     ClearPedTasks(PlayerPedId())
 end
 
