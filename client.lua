@@ -22,7 +22,7 @@ Citizen.CreateThread(function()
                 geam = GetEntityCoords(entity)
         if DoesEntityExist(entity) <= 1.5 then
             waittime = 5
-            DrawText3D(geam.x, geam.y, geam.z + 1.5, '~b~[SIMEON] ~w~Wash this windows if you can! Do not worry! Not free!')  
+            DrawText3D(geam.x, geam.y, geam.z + 1.5, '~b~[SIMEON] ~w~Wash these windows if you can! Do not worry! Not free!')  
             DrawText3D(geam.x, geam.y, geam.z + 1.3, '~b~[SIMEON] ~w~To start press ~g~[E]')  
             if IsControlJustReleased(0, 38) then
                 if not windows2[entity] then
