@@ -1,5 +1,6 @@
 
 -- made by Uwu Hentai | Uwu Hentai#4312
+-- converted by Gadzzaa | twitch.tv/gadzzaa#9949
 local geamuri = {
     "prop_bollard_02a"
 }
