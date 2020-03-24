@@ -4,6 +4,4 @@ I converted this from vrp to esx. The original version is made by UwuHentai and 
 
 What does this do: You can wash the windows from Simeon's Showroom and win some juicy money.
 
-ESX Version : 
-
 Hope you like it!
