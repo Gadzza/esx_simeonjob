@@ -1,5 +1,6 @@
 
--- made by Uwu Hentai | Uwu Hentai#4312 
+-- made by Uwu Hentai | Uwu Hentai#4312
+-- converted by Gadzzaa | twitch.tv/gadzzaa#9949
 ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)	
 RegisterServerEvent("uwu:simeonda")
