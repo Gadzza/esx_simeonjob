@@ -1,6 +1,6 @@
 # esx_simeonjob
 
-ATTETION! THIS IS THE VERSION THAT USES COORDS!
+ATTETION! THIS IS THE VERSION THAT USES PROPS!
 
 I converted this from vrp to esx. The original version is made by UwuHentai and can be found here: https://github.com/UwuHentai/vrp_simeonjob
 
